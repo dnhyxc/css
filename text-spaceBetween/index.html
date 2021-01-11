@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text-space-between</title>
+  <style>
+    .info {
+      border: 1px solid red;
+      width: 500px;
+      height: 300px;
+    }
+
+    .username,
+    .password {
+      width: 60px;
+      height: 40px;
+      line-height: 40px;
+      font-family: PingFangSC-Medium;
+      font-size: 16px;
+      /* display: inline-block; */
+      text-align: justify;
+      padding-right: 10px;
+      vertical-align: bottom;
+    }
+
+    .username::after,
+    .password::after {
+      display: inline-block;
+      width: 100%;
+      content: '';
+      height: 0
+    }
+  </style>
+</head>
+
+<body>
+  <div class="info">
+    <div class="username">用户名</div>
+    <div class="password">密码</div>
+  </div>
+</body>
+
+</html>
