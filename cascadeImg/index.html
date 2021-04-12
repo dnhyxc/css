@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CascadeImg</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .wrap {
+      width: 98px;
+      height: 110px;
+      margin: 100px auto;
+      position: relative;
+    }
+
+    .cover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 102px;
+      height: 114px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(225, 225, 225, 0.1);
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .colse {
+      position: absolute;
+      right: 6px;
+      top: 6px;
+      font-size: 20px;
+      width: 22px;
+      height: 22px;
+      text-align: center;
+      line-height: 19px;
+      color: #999;
+      background-color: #fff;
+      border-radius: 21px;
+      cursor: pointer;
+      /* 双击不选中文字 */
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      -khtml-user-select: none;
+      user-select: none;
+    }
+
+    .count {
+      margin-bottom: 10px;
+    }
+
+    .stackone {
+      height: 110px;
+      width: 98px;
+      border: 2px solid #fff;
+      background-color: #99cecb;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .stacktwo {
+      content: "";
+      height: 110px;
+      width: 98px;
+      background: #a8b386;
+      border: 2px solid #fff;
+      position: absolute;
+      z-index: -1;
+      top: 0px;
+      left: -5px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      transform: rotate(-9deg);
+    }
+
+
+    .stackthree {
+      content: "";
+      height: 110px;
+      width: 98px;
+      background: #6f95b1;
+      border: 2px solid #fff;
+      position: absolute;
+      z-index: -1;
+      top: 0px;
+      left: 0px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      transform: rotate(12deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="cover">
+      <span class="colse">×</span>
+      <span class="count">66</span>
+      <span>查看相关图片</span>
+    </div>
+    <div class="stackone"></div>
+    <div class="stacktwo"></div>
+    <div class="stackthree"></div>
+  </div>
+</body>
+
+</html>
