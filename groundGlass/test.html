@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            --color: hsl(210deg, 10%, 30%);
+            background: var(--color);
+        }
+        
+        .neumorphic {
+            border-radius: 1rem;
+            background: var(--color);
+            backdrop-filter: blur(1.5rem);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: -0.25rem -0.25rem 0.5rem rgba(255, 255, 255, 0.07), 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.12), -0.75rem -0.75rem 1.75rem rgba(255, 255, 255, 0.07), 0.75rem 0.75rem 1.75rem rgba(0, 0, 0, 0.12), inset 8rem 8rem 8rem rgba(0, 0, 0, 0.05), inset -8rem -8rem 8rem rgba(255, 255, 255, 0.05);
+        }
+        
+        div {
+            position: absolute;
+            top: 50vh;
+            left: 50vw;
+            width: 400px;
+            height: 300px;
+            max-width: 80vw;
+            max-height: 80vh;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="neumorphic"></div>
+</body>
+
+</html>
