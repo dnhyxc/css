@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @keyframes imageAnimation {
+  0% {
+    background-image: url(./c3.png);
+    background-size: 100% 100%;
+  }
+
+  50% {
+    background-image: url(./wallhaven-3krpqy_1920x1080.png);
+    background-size: 100% 100%;
+  }
+
+  100% {
+    background-image: url(./c3.png);
+    background-size: 100% 100%;
+  }
+/* 
+  60% {
+    background-image: url(./c3.png);
+  }
+
+  80% {
+    background-image: url(./wallhaven-yjk6ml_1920x1080.png);
+  } */
+}
+    .wrap{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 1280px;
+      height: 600px;
+      transform: translate(-50%,-50%);
+      background-color: #ccc;
+      animation-name: imageAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  overflow-y: overlay;
+  /* background-image: url(./c3.png),
+    url(./wallhaven-3krpqy_1920x1080.png), url(./wallhaven-yjk6ml_1920x1080.png), */
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    app
+  </div>
+</body>
+</html>
